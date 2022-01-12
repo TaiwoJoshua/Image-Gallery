@@ -1,15 +1,13 @@
 .loginpagewrapper{
     width: 100%;
     height: auto;
-    padding: auto;
+    padding: 5em;
     margin: 0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 100%;
-    background: rgba(194, 183, 183, .7);
     z-index: 1;
 }
 .loginformwrapper{
