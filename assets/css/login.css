@@ -7,7 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    top: 100%;
     background: rgba(194, 183, 183, .7);
     z-index: 1;
 }
