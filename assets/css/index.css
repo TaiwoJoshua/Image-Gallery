@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     color: #22046b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .pagewrapper{
     width: 100%;
