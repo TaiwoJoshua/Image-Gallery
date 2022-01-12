@@ -19,6 +19,7 @@ body{
     width: 70%;
     height: auto;
     display: grid;
+    margin-top: 2em;
     grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
 }
