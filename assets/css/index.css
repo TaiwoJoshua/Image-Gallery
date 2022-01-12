@@ -22,11 +22,6 @@ body{
     grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
 }
-.class{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
 .img{
     background: url(../img/semen-borisov-gCq65qN53RI-unsplash.jpg) center no-repeat;
     background-size: cover;
