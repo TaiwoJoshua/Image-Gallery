@@ -94,4 +94,7 @@ span{
         flex-direction: column;
         height: auto;
     }
+    p{
+        font-size: 15px;
+    }
 }
