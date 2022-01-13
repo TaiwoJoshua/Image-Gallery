@@ -151,10 +151,10 @@ a:hover, .cat{
         justify-content: center;
     }
     .content{
-        height: 60vh;
+        height: 50vh;
     }
     .sidenav{
-        height: 20vh;
+        height: 30vh;
     }
     .sidenav>div>a:hover{
         padding-left: none;
