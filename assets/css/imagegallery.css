@@ -20,8 +20,6 @@ body{
     grid-template-columns: 2fr 2fr 4fr;
     background: linear-gradient(45deg, #22046b, #e14e42) fixed;
     box-sizing: border-box;
-    /* position: sticky;
-    top: 0; */
 }
 .special{
     display: grid;
@@ -138,7 +136,7 @@ a:hover, .cat{
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
-        height: 20vh;
+        height: 25vh;
     }
     .navbar>div{
         margin-bottom: 5px;
@@ -154,7 +152,7 @@ a:hover, .cat{
         height: 50vh;
     }
     .sidenav{
-        height: 30vh;
+        height: 25vh;
     }
     .sidenav>div>a:hover{
         padding-left: none;
