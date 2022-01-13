@@ -150,9 +150,10 @@ a:hover, .cat{
     .content{
         height: auto;
         margin-top: 2em;
+        padding: 10px;
     }
     .sidenav{
-        height: 18vh;
+        height: auto;
     }
     .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
         padding-left: none;
