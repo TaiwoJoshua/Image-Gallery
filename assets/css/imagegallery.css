@@ -123,6 +123,9 @@ a:hover, .cat{
 
 /* <-------------- Media Query Section -------------->*/
 @media screen and (max-width: 425px) and (min-width: 320px){
+    .pagewrapper{
+        height: auto;
+    }
     .navbar{
         display: flex;
         flex-direction: column;
