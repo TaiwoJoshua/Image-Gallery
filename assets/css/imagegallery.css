@@ -130,7 +130,7 @@ a:hover, .cat{
 /* <-------------- Media Query Section -------------->*/
 @media screen and (max-width: 425px) and (min-width: 320px){
     .pagewrapper{
-        height: auto;
+        height: 100vh;
     }
     .navbar{
         display: flex;
@@ -146,9 +146,10 @@ a:hover, .cat{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 90vh;
     }
     .content{
-        height: 100vh;
+        height: 50vh;
     }
     .sidenav>div>a:hover{
         padding-left: none;
