@@ -15,10 +15,14 @@ body{
 }
 .navbar{
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 4fr;
     background: linear-gradient(45deg, #22046b, #e14e42) fixed;
     box-sizing: border-box;
     position: sticky;
+}
+.special{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .body{
     display: grid;
@@ -82,15 +86,23 @@ a:hover, .cat{
 .sidenav{
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: repeat(13, 1fr);
-    height: 100%;
+    grid-template-rows: 2fr 1fr 10fr;
+    height: auto;
 }
-.sidenav>div>a:hover{
+.what{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+.what2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
     padding-left: 30px;
     transition: 500ms ease-in;
     border-left: 3px solid white;
 }
-.sidenav>div>a, .cat{
+.sidenav>div>a, .cat, .what>div>a, .what2>div>a{
     box-sizing: border-box;
     padding: 8px;
 }
@@ -114,9 +126,11 @@ a:hover, .cat{
     .navbar{
         display: flex;
         flex-direction: column;
+        margin-bottom: 1em;
     }
     .navbar>div{
         margin-bottom: 5px;
+        padding: 10px;
     }
     .body{
         display: flex;
@@ -126,5 +140,21 @@ a:hover, .cat{
     }
     .content{
         height: 100vh;
+    }
+    .sidenav>div>a:hover{
+        padding-left: none;
+        transition: none;
+        border-left: none;
+    }
+    .sidenav>div>a{
+        padding: 0;
+    }
+    .what{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .what2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
