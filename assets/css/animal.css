@@ -162,7 +162,7 @@ img{
     .sidenav{
         height: auto;
         position: relative;
-        top: -35px;
+        top: -32px;
     }
     .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
         padding-left: none;
