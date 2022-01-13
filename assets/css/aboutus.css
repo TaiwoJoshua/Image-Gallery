@@ -130,7 +130,7 @@ a:hover, .cat{
 /* <-------------- Media Query Section -------------->*/
 @media screen and (max-width: 425px) and (min-width: 320px){
     .pagewrapper{
-        height: 100vh;
+        height: auto;
     }
     .navbar{
         display: flex;
@@ -149,6 +149,7 @@ a:hover, .cat{
     }
     .content{
         height: auto;
+        margin-top: 2em;
     }
     .sidenav{
         height: 18vh;
