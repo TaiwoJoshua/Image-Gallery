@@ -131,6 +131,7 @@ a:hover, .cat{
 @media screen and (max-width: 425px) and (min-width: 320px){
     .pagewrapper{
         height: auto;
+        position: relative;
     }
     .navbar{
         display: flex;
@@ -146,14 +147,19 @@ a:hover, .cat{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     .content{
         height: auto;
         margin-top: 2em;
         padding: 10px;
+        position: relative;
+        bottom: 330px;
     }
     .sidenav{
         height: auto;
+        position: relative;
+        bottom: 100px;
     }
     .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
         padding-left: none;
