@@ -137,7 +137,7 @@ img{
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
-        height: 25vh;
+        height: 30vh;
         z-index: 4;
     }
     .navbar>div{
@@ -157,12 +157,12 @@ img{
         height: auto;
         padding: 10px;
         position: relative;
-        top: -200px;
+        top: -250px;
     }
     .sidenav{
         height: auto;
         position: relative;
-        top: -50px;
+        top: -40px;
     }
     .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
         padding-left: none;
