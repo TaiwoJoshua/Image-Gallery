@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(45deg, #22046b, #e14e42) fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pagewrapper{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    background: linear-gradient(45deg, #22046b, #e14e42) fixed;
+    box-sizing: border-box;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.special{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 0.5fr;
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    box-sizing: border-box;
+}
+.teejay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    color: #e7c82f;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid #e7c82f;
+    box-sizing: border-box;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 2em;
+    position: relative;
+}
+.busy{
+    position: relative;
+}
+::placeholder{
+    color: white;
+}
+#fas{
+    position: absolute;
+    left: 0;
+    font-size: 13px;
+    padding: 8px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+#fas:hover{
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover, .cat, .text{
+    color: #e7c82f;
+}
+.sidenav{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 2fr 1fr 10fr;
+    height: 85vh;
+    position: sticky;
+    top: 15vh;
+}
+.what{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+.what2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.sidenav>div>a:hover, .what>div>a:hover:not(.text), .what2>div>a:hover{
+    padding-left: 30px;
+    transition: 500ms ease-in;
+    border-left: 3px solid white;
+}
+.sidenav>div>a, .cat, .what>div>a, .what2>div>a{
+    box-sizing: border-box;
+    padding: 8px;
+}
+.content{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 40vh;
+    grid-gap: 1%;
+    padding: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* <-------------- Media Query Section -------------->*/
+@media screen and (max-width: 425px) and (min-width: 320px){
+    .pagewrapper{
+        height: auto;
+        position: relative;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        height: 28vh;
+        z-index: 4;
+    }
+    .navbar>div{
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        top: -259px;
+    }
+    .sidenav{
+        height: auto;
+        position: relative;
+        top: -32px;
+    }
+    .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
+        padding-left: none;
+        transition: none;
+        border-left: none;
+    }
+    .what{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+        bottom: 40px;
+    }
+    .cat{
+        position: relative;
+        bottom: 40px;
+    }
+    .what2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+    .what>div>a{
+        padding: 10px;
+    }
+    .home{
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
