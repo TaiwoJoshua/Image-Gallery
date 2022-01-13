@@ -154,7 +154,7 @@ a:hover, .cat{
     .sidenav{
         height: 25vh;
     }
-    .sidenav>div>a:hover{
+    .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
         padding-left: none;
         transition: none;
         border-left: none;
@@ -168,7 +168,7 @@ a:hover, .cat{
         grid-template-columns: 1fr 1fr;
         margin: 0;
     }
-    .what2>div>a, .cat, .what>div>a{
+    .what>div>a{
         padding: 10px;
     }
 }
