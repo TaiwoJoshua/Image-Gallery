@@ -75,6 +75,10 @@ input[type="submit"]{
     border: 2px solid #22046b;
     outline: none;
 }
+button>a{
+    text-decoration: none;
+    color: white;
+}
 button{
     border: 2px solid #22046b;
     background-color: #22046b;
@@ -97,6 +101,6 @@ span{
         height: auto;
     }
     p{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
