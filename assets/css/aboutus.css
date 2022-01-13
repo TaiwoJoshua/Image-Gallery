@@ -137,6 +137,7 @@ a:hover, .cat{
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
+        z-index: 2;
     }
     .navbar>div{
         margin-bottom: 5px;
@@ -154,12 +155,12 @@ a:hover, .cat{
         margin-top: 2em;
         padding: 10px;
         position: relative;
-        bottom: 330px;
+        bottom: 400px;
     }
     .sidenav{
         height: auto;
         position: relative;
-        bottom: 100px;
+        bottom: 120px;
     }
     .sidenav>div>a:hover, .what>div>a:hover, .what2>div>a:hover{
         padding-left: none;
@@ -169,6 +170,12 @@ a:hover, .cat{
     .what{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+        bottom: 40px;
+    }
+    .cat{
+        position: relative;
+        bottom: 40px;
     }
     .what2{
         display: grid;
