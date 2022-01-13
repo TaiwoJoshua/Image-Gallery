@@ -155,8 +155,12 @@ a:hover, .cat{
         height: 50vh;
     }
     .sidenav{
-        height: 200px;
+        height: 250px;
         margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     .sidenav>div>a:hover{
         padding-left: none;
