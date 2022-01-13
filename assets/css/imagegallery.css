@@ -171,4 +171,8 @@ a:hover, .cat{
     .what>div>a{
         padding: 10px;
     }
+    .home{
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }
