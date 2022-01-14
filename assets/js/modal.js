@@ -19,11 +19,13 @@ function ourFunction(){
 function remove(){
     logouts.style.opacity = "0";
     logouts.style.zIndex = "1";
+    document.getElementById('bars').style.opacity = "1";
 }
 
 function logout(){
     logouts.style.opacity = "1";
     logouts.style.zIndex = "4";
+    document.getElementById('bars').style.opacity = "0";
 }
 
 

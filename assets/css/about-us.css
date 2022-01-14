@@ -130,8 +130,8 @@ footer{
     z-index: 2;
 }
 #logouts{
-    position: relative;
-    left: -2em;
+    position: static;
+    margin-left: -4em;
     background-color: white;
     padding: 10px 20px;
     z-index: 1;
