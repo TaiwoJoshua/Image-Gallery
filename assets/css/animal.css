@@ -170,11 +170,11 @@ footer{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin: 10px 0;
     }
     .content>a{
         width: 100%;
-        height: 50vh;
+        height: 35vh;
     }
     .sidenav>div>a:hover, .what>div>a:hover:not(.text), .what2>div>a:hover{
         padding-left: 0px;
