@@ -19,6 +19,8 @@ body{
     justify-content: space-between;
     background-color: #FAF3E0;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
 }
 .special{
     display: flex;
