@@ -8,7 +8,7 @@ body{
     background: linear-gradient(45deg, #22046b, #e14e42) fixed;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
-    grid-template-rows: 1fr 20fr;
+    grid-template-rows: 1fr 20fr 1fr;
 }
 /* .pagewrapper{
     width: 100%;
@@ -17,6 +17,14 @@ body{
     display: grid;
     grid-template-rows: 1fr 20fr;
 } */
+.footer{
+    width: 100%;
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .navbar{
     display: grid;
     grid-template-columns: 2fr 2fr 4fr;
@@ -94,7 +102,7 @@ a:hover, .cat, .text{
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 2fr 1fr 10fr;
-    height: 85vh;
+    height: 70vh;
     position: sticky;
     top: 15vh;
 }
