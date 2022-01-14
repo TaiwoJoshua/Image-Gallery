@@ -17,10 +17,12 @@ function ourFunction(){
 }
 
 function remove(){
+    logouts.style.visibility = "collapse";
     logouts.style.zIndex = "-1";
 }
 
 function logout(){
+    logouts.style.visibility = "visible";
     logouts.style.zIndex = "4";
 }
 
