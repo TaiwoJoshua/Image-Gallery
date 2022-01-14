@@ -41,12 +41,13 @@
             </div>
             <div class="links">
                 <a href="#">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" id="bars" onclick="logout()"></i>
                 </a>
+                <a href="../index.html" id="logouts">Log Out</a>
             </div>
             </div>
         </nav>
-        <div class="body">
+        <div class="body" onclick="remove()">
             <div class="sidenav">
                 <div class="what2">
                     <div><a href="#">Editorial</a></div>
@@ -86,6 +87,7 @@
         </footer>
     </div>
     <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/modal.js"></script>
     <script src="../assets/library/fancybox-master/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>

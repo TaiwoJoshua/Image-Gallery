@@ -73,7 +73,7 @@ span{
 #fas{
     position: absolute;
     padding: 10px;
-    z-index: 1;
+    z-index: 3;
 }
 #fas:hover{
     cursor: pointer;
@@ -99,6 +99,7 @@ span{
     align-items: center;
     justify-content: center;
     color: white;
+    padding: 10px;
     background: url(../img/eberhard-grossgasteiger-qfbmaYHyQuw-unsplash.jpg) no-repeat;
     background-size: cover;
 }
@@ -146,16 +147,15 @@ footer{
 }
 #bars{
     position: absolute;
+    z-index: 2;
 }
-#logout{
+#logouts{
     position: relative;
     left: -2em;
     background-color: white;
     padding: 10px 20px;
+    z-index: 1;
     opacity: 0;
-}
-#bars>i:hover #logout{
-    opacity: 1;
 }
 
 
@@ -187,11 +187,10 @@ footer{
         width: 33%;
     }
     .content{
-        height: auto;
+        height: 50vh;
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 10px 0;
     }
     .content>a{
         width: 100%;

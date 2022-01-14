@@ -70,7 +70,7 @@ span{
 #fas{
     position: absolute;
     padding: 10px;
-    z-index: 1;
+    z-index: 3;
 }
 #fas:hover{
     cursor: pointer;
@@ -137,6 +137,18 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+#bars{
+    position: absolute;
+    z-index: 2;
+}
+#logouts{
+    position: relative;
+    left: -2em;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 1;
+    opacity: 0;
 }
 
 
