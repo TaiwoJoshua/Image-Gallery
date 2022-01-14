@@ -1,18 +1,22 @@
 body{
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
     background: linear-gradient(45deg, #22046b, #e14e42) fixed;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-rows: 1fr 20fr;
 }
-.pagewrapper{
+/* .pagewrapper{
     width: 100%;
     height: auto;
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr 20fr;
-}
+} */
 .navbar{
     display: grid;
     grid-template-columns: 2fr 2fr 4fr;
@@ -129,10 +133,10 @@ img{
 
 /* <-------------- Media Query Section -------------->*/
 @media screen and (max-width: 425px) and (min-width: 320px){
-    .pagewrapper{
+    /* .pagewrapper{
         height: auto;
         position: relative;
-    }
+    } */
     .navbar{
         display: flex;
         flex-direction: column;
