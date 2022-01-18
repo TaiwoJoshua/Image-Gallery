@@ -59,7 +59,7 @@
 }
 .others{
     display: flex;
-    width: 50%;
+    width: 100%;
     border-radius: 15px;
     margin: auto;
     margin-bottom: 10px;
@@ -107,6 +107,6 @@
         font-size: 13px;
     }
     .others{
-        width: 70%;
+        width: 100%;
     }
 }
