@@ -28,6 +28,7 @@
     border: none;
     border-bottom: 2px solid #22046b;
     outline: none;
+    margin-bottom: 10px;
 }
 #lsubmit{
     background-color: #22046b;
@@ -58,9 +59,10 @@
 }
 .others{
     display: flex;
-    width: 45%;
+    width: 50%;
     border-radius: 15px;
     margin: auto;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     background-color: white;

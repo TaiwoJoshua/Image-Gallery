@@ -1,12 +1,14 @@
 const displayBlock = document.getElementById('blockdisplay');
 const logouts = document.getElementById('logouts');
-const invisible2 = document.getElementsByClassName('invisible2');
-const invisible = document.getElementsByClassName('invisible');
-const visible = document.getElementsByClassName('visible');
-const puser = document.getElementsByClassName('puser');
-const usemail = document.getElementsByClassName('usemail');
-const pnumber = document.getElementsByClassName('pnumber');
-
+const iconmail = document.getElementById('iconmail');
+const iemail = document.getElementById('emails');
+const iconuser = document.getElementById('iconuser');
+const iuser = document.getElementById('uName');
+const iconphone = document.getElementById('iconphone');
+const iphone = document.getElementById('numbers');
+const clickphone = document.getElementById('clickphone');
+const clickuser = document.getElementById('clickuser');
+const clickemail = document.getElementById('clickemail');
 
 function myFunction(){
     displayBlock.style.zIndex = "3";
@@ -50,25 +52,39 @@ function searchFunction(){
   }
   
 function phoneFunction(){
-    invisible2.className = "visible";
-    visible.className = "invisible2";
-    puser.className = "visible";
-    pnumber.style.backgroundColor = "#22046b";
+    iphone.className = "visible";
+    iconphone.className = "visible";
+    iuser.className = "invisible";
+    iconuser.className = "invisible";
+    clickuser.style.display = "block";
+    clickemail.style.display = "block";
+    iemail.className = "invisible";
+    iconmail.className = "invisible";
+    clickphone.style.display = "none";
 }
 
 function emailFunction(){
-    invisible.className = "visible";
-    visible.className = "invisible";
-    puser.className = "visible";
-    usemail.style.backgroundColor = "#22046b";
+    iemail.className = "visible";
+    iconmail.className = "visible";
+    iuser.className = "invisible";
+    iconuser.className = "invisible";
+    clickuser.style.display = "block";
+    clickphone.style.display = "block";
+    iphone.className = "invisible";
+    iconphone.className = "invisible";
+    clickemail.style.display = "none";
 }
 
 function userFunction(){
-    usemail.className = "invisible";
-    invisible.className = "invisible";
-    invisible2.className = "invisible2";
-    visible.className = "visible";
-    puser.style.backgroundColor = "#22046b";
+    iuser.className = "visible";
+    iconuser.className = "visible";
+    iemail.className = "invisible";
+    iconmail.className = "invisible";
+    clickemail.style.display = "block";
+    clickphone.style.display = "block";
+    iphone.className = "invisible";
+    iconphone.className = "invisible";
+    clickuser.style.display = "none";
 }
 
 
