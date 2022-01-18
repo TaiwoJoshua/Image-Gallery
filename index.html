@@ -57,18 +57,18 @@
         <div class="loginformwrapper come">
             <h2 class="loginh2">Login</h2><br>
             <div class="others">
-            <div class="pnumber" onclick="phoneFunction()">Phone <br>Number</div>
-            <div class="usemail" onclick="emailFunction()">E-mail</div>
-            <div class="puser invisible3" onclick="userFunction()">Username</div>
-            </div><br>
-            <div class="invisible"><i class="fas fa-envelope"></i><label for="e-mail">E-Mail</label></div>
-            <input class="invisible" type="email" name="email" id="emails" required placeholder="e-mail here....."><br>
-            <div class="invisible2"><i class="fas fa-phone"></i><label for="phoneNumber">Phone Number</label></div>
-            <input class="invisible2" type="text" name="phoneNumber" minlength="11" id="numbers" maxlength="15" required placeholder="phone number here....."><br>
-            <div class="visible"><i class="fas fa-user"></i><label for="Username">Username</label></div>
-            <input class="visible" type="text" name="username" id="uName" maxlength="11" required placeholder="username here....."><br>
+            <div class="pnumber visible" id="clickphone" onclick="phoneFunction()">Phone <br>Number</div>
+            <div class="usemail visible" id="clickemail" onclick="emailFunction()">E-mail</div>
+            <div class="puser invisible" id="clickuser" onclick="userFunction()">Username</div>
+            </div>
+            <div class="invisible" id="iconmail"><i class="fas fa-envelope"></i><label for="e-mail">E-Mail</label></div>
+            <input class="invisible" type="email" name="email" id="emails" required placeholder="e-mail here.....">
+            <div class="invisible" id="iconphone"><i class="fas fa-phone"></i><label for="phoneNumber">Phone Number</label></div>
+            <input class="invisible" type="text" name="phoneNumber" minlength="11" id="numbers" maxlength="15" required placeholder="phone number here.....">
+            <div class="visible" id="iconuser"><i class="fas fa-user"></i><label for="Username">Username</label></div>
+            <input class="visible" type="text" name="username" id="uName" maxlength="11" required placeholder="username here.....">
             <div><i id="eye3" class="fas fa-eye-slash" onclick="theirFunction()"></i><label for="Password">Password</label></div>
-            <input type="password" name="Password" id="pWord" maxlength="11" required placeholder="password here....."><br>
+            <input type="password" name="Password" id="pWord" maxlength="11" required placeholder="password here.....">
             <input type="submit" value="submit" id="lsubmit">
             <p id="account">Don't have an account yet, <button id="lsignup" onclick="ourFunction()">Sign Up</button></p>
         </div>
@@ -106,7 +106,6 @@
             }
             document.getElementById("eye3").className = "fas fa-eye";
             }
-
-    </script>   
+    </script>
 </body>
 </html>
