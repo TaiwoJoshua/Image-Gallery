@@ -106,4 +106,7 @@
     #account, #lsignup{
         font-size: 13px;
     }
+    .others{
+        width: 70%;
+    }
 }
