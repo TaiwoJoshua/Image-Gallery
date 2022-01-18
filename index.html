@@ -29,13 +29,15 @@
                     Join TeeJay<span>Studio</span> 
                 </h1>
                 <div><i class="fas fa-user"></i><label for="Firstname">Firstname</label></div>
-                <input type="text" name="Firstname" id="firstName" required placeholder="firstname here....."><br>
+                <input type="text" name="Firstname" id="firstName" maxlength="11" required placeholder="firstname here....."><br>
                 <div><i class="fas fa-user"></i><label for="Lastname">Lastname</label></div>
-                <input type="text" name="Lastname" id="lastName" required placeholder="lastname here....."><br>
+                <input type="text" name="Lastname" id="lastName" maxlength="11" required placeholder="lastname here....."><br>
                 <div><i class="fas fa-envelope"></i><label for="e-mail">E-Mail</label></div>
                 <input type="email" name="email" id="email" required placeholder="e-mail here....."><br>
+                <div><i class="fas fa-phone"></i><label for="phoneNumber">Phone Number</label></div>
+                <input type="text" name="phonenumber" minlength="11" maxlength="15" id="phoneNumber" required placeholder="phone number here....."><br>
                 <div><i class="fas fa-user"></i><label for="Username">Username</label></div>
-                <input type="text" name="Username" id="userName" required placeholder="username here....."><br>
+                <input type="text" name="Username" id="userName" maxlength="11" required placeholder="username here....."><br>
                 <div><i id="eye" class="fas fa-eye-slash" onclick="myFunction2()"></i><label for="Password">Password</label></div>
                 <input type="password" name="Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="password here....."><br>
                 <div><i id="eye2" class="fas fa-eye-slash" onclick="yourFunction()"></i><label for="confirmpassword">Confirm Password</label></div>
@@ -54,10 +56,19 @@
     <div id="blockdisplay" class="loginpagewrapper">
         <div class="loginformwrapper come">
             <h2 class="loginh2">Login</h2><br>
-            <div><i class="fas fa-user"></i><label for="Username">Username</label></div>
-            <input type="text" name="Username" id="uName" required placeholder="username here....."><br>
+            <div class="others">
+            <div class="pnumber" onclick="phoneFunction()">Phone <br>Number</div>
+            <div class="usemail" onclick="emailFunction()">E-mail</div>
+            <div class="puser invisible3" onclick="userFunction()">Username</div>
+            </div><br>
+            <div class="invisible"><i class="fas fa-envelope"></i><label for="e-mail">E-Mail</label></div>
+            <input class="invisible" type="email" name="email" id="emails" required placeholder="e-mail here....."><br>
+            <div class="invisible2"><i class="fas fa-phone"></i><label for="phoneNumber">Phone Number</label></div>
+            <input class="invisible2" type="text" name="phoneNumber" minlength="11" id="numbers" maxlength="15" required placeholder="phone number here....."><br>
+            <div class="visible"><i class="fas fa-user"></i><label for="Username">Username</label></div>
+            <input class="visible" type="text" name="username" id="uName" maxlength="11" required placeholder="username here....."><br>
             <div><i id="eye3" class="fas fa-eye-slash" onclick="theirFunction()"></i><label for="Password">Password</label></div>
-            <input type="password" name="Password" id="pWord" required placeholder="password here....."><br>
+            <input type="password" name="Password" id="pWord" maxlength="11" required placeholder="password here....."><br>
             <input type="submit" value="submit" id="lsubmit">
             <p id="account">Don't have an account yet, <button id="lsignup" onclick="ourFunction()">Sign Up</button></p>
         </div>
