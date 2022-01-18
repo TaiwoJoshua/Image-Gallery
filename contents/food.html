@@ -20,7 +20,7 @@
             </div>
             <div class="search">
                 <div class="busy">
-                    <i class="fas fa-search" id="fas"></i><input type="search" name="" id="search" placeholder="search images here....">
+                    <i class="fas fa-search" id="fas" onclick="searchFunction()"></i><input type="search" name="search" minlength="3" title="please input at least 3 letters" id="search" placeholder="search images here....">
                 </div>
             </div>
             <div class="special">
@@ -49,14 +49,6 @@
         </nav>
         <div class="body" onclick="remove()">
             <div class="sidenav">
-                <div class="what2">
-                    <div><a href="#">Editorial</a></div>
-                    <div><a href="#">Following</a></div>
-                </div>
-                <div class="cat">
-                    Categories
-                </div>
-                <div class="what">
                     <div><a href="./animal.html">Animals</a></div>
                     <div><a class="text">Food</a></div>
                     <div><a href="./nature.html">Nature</a></div>
@@ -67,39 +59,69 @@
                     <div><a href="#">Sports</a></div>
                     <div><a href="#">Health</a></div>
                     <div><a href="#">Buildings</a></div>
-                </div>
             </div>
             <div class="content">
-                <a data-fancybox="gallery" href="../assets/img/Food/albert-vincent-wu-Cxan_uYyQdo-unsplash.jpg">
-                    <img src="../assets/img/Food/albert-vincent-wu-Cxan_uYyQdo-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/aleksandra-tanasiienko-D734UYVyuhI-unsplash.jpg">
-                    <img src="../assets/img/Food/aleksandra-tanasiienko-D734UYVyuhI-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/brigitte-baranyi-_kMYGW_tUPQ-unsplash.jpg">
-                    <img src="../assets/img/Food/brigitte-baranyi-_kMYGW_tUPQ-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/brigitte-baranyi-JHpZ7axVE_A-unsplash.jpg">
-                    <img src="../assets/img/Food/brigitte-baranyi-JHpZ7axVE_A-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/helena-yankovska-rgpZJXrIUdI-unsplash.jpg">
-                    <img src="../assets/img/Food/helena-yankovska-rgpZJXrIUdI-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/kobby-mendez-WZGdx3K3_tw-unsplash.jpg">
-                    <img src="../assets/img/Food/kobby-mendez-WZGdx3K3_tw-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/piret-ilver-ZNLoCaeHOFA-unsplash.jpg">
-                    <img src="../assets/img/Food/piret-ilver-ZNLoCaeHOFA-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/razvan-mirel-RVnYja0wto4-unsplash.jpg">
-                    <img src="../assets/img/Food/razvan-mirel-RVnYja0wto4-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/rui-silvestre-4fNGdyHQHiE-unsplash.jpg">
-                    <img src="../assets/img/Food/rui-silvestre-4fNGdyHQHiE-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Food/zoe-h57HnljCa98-unsplash.jpg">
-                    <img src="../assets/img/Food/zoe-h57HnljCa98-unsplash.jpg" alt="">
-                </a>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/albert-vincent-wu-Cxan_uYyQdo-unsplash.jpg">
+                        <img src="../assets/img/Food/albert-vincent-wu-Cxan_uYyQdo-unsplash.jpg" alt="bottle of wine">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/albert-vincent-wu-Cxan_uYyQdo-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/aleksandra-tanasiienko-D734UYVyuhI-unsplash.jpg">
+                        <img src="../assets/img/Food/aleksandra-tanasiienko-D734UYVyuhI-unsplash.jpg" alt="fried egg">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/aleksandra-tanasiienko-D734UYVyuhI-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/brigitte-baranyi-_kMYGW_tUPQ-unsplash.jpg">
+                        <img src="../assets/img/Food/brigitte-baranyi-_kMYGW_tUPQ-unsplash.jpg" alt="plate of beans">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/brigitte-baranyi-_kMYGW_tUPQ-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/brigitte-baranyi-JHpZ7axVE_A-unsplash.jpg">
+                        <img src="../assets/img/Food/brigitte-baranyi-JHpZ7axVE_A-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/brigitte-baranyi-JHpZ7axVE_A-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/helena-yankovska-rgpZJXrIUdI-unsplash.jpg">
+                        <img src="../assets/img/Food/helena-yankovska-rgpZJXrIUdI-unsplash.jpg" alt="cup of tea">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/helena-yankovska-rgpZJXrIUdI-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/kobby-mendez-WZGdx3K3_tw-unsplash.jpg">
+                        <img src="../assets/img/Food/kobby-mendez-WZGdx3K3_tw-unsplash.jpg" alt="cup of tea">
+                    </a>
+                    <button class="download"><a download href="../assets/img">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/piret-ilver-ZNLoCaeHOFA-unsplash.jpg">
+                        <img src="../assets/img/Food/piret-ilver-ZNLoCaeHOFA-unsplash.jpg" alt="doughnut">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/piret-ilver-ZNLoCaeHOFA-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/razvan-mirel-RVnYja0wto4-unsplash.jpg">
+                        <img src="../assets/img/Food/razvan-mirel-RVnYja0wto4-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/razvan-mirel-RVnYja0wto4-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/rui-silvestre-4fNGdyHQHiE-unsplash.jpg">
+                        <img src="../assets/img/Food/rui-silvestre-4fNGdyHQHiE-unsplash.jpg" alt="glass cup of orange juice">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/rui-silvestre-4fNGdyHQHiE-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Food/zoe-h57HnljCa98-unsplash.jpg">
+                        <img src="../assets/img/Food/zoe-h57HnljCa98-unsplash.jpg" alt="Cup of tea">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Food/zoe-h57HnljCa98-unsplash.jpg">download</a></button>
+                </div>
+                <div style="display: none;" id="notFound">Search Input not found</div>
             </div>
         </div>
         <footer class="footer">
@@ -118,5 +140,21 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/library/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            animationEffect : "slide",
+            transitionEffect : "circular",
+            loop : "true",
+            buttons : [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        });
+    </script>
 </body>
 </html>

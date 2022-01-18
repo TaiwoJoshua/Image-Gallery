@@ -49,14 +49,6 @@
         </nav>
         <div class="body" onclick="remove()">
             <div class="sidenav">
-                <div class="what2">
-                    <div><a href="#">Editorial</a></div>
-                    <div><a href="#">Following</a></div>
-                </div>
-                <div class="cat">
-                    Categories
-                </div>
-                <div class="what">
                     <div><a href="./animal.html">Animals</a></div>
                     <div><a href="./food.html">Food</a></div>
                     <div><a href="./nature.html">Nature</a></div>
@@ -67,7 +59,7 @@
                     <div><a href="#">Sports</a></div>
                     <div><a href="#">Health</a></div>
                     <div><a href="#">Buildings</a></div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="content">
                 lorem*20
@@ -89,5 +81,21 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/library/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            animationEffect : "slide",
+            transitionEffect : "circular",
+            loop : "true",
+            buttons : [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        });
+    </script>
 </body>
 </html>

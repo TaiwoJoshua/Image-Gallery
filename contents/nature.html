@@ -20,7 +20,7 @@
             </div>
             <div class="search">
                 <div class="busy">
-                    <i class="fas fa-search" id="fas"></i><input type="search" name="" id="search" placeholder="search images here....">
+                    <i class="fas fa-search" id="fas" onclick="searchFunction()"></i><input type="search" name="search" minlength="3" title="please input at least 3 letters" id="search" placeholder="search images here....">
                 </div>
             </div>
             <div class="special">
@@ -49,14 +49,6 @@
         </nav>
         <div class="body" onclick="remove()">
             <div class="sidenav">
-                <div class="what2">
-                    <div><a href="#">Editorial</a></div>
-                    <div><a href="#">Following</a></div>
-                </div>
-                <div class="cat">
-                    Categories
-                </div>
-                <div class="what">
                     <div><a href="./animal.html">Animals</a></div>
                     <div><a href="./food.html">Food</a></div>
                     <div><a class="text">Nature</a></div>
@@ -67,39 +59,69 @@
                     <div><a href="#">Sports</a></div>
                     <div><a href="#">Health</a></div>
                     <div><a href="#">Buildings</a></div>
-                </div>
             </div>
             <div class="content">
-                <a data-fancybox="gallery" href="../assets/img/Nature/allec-gomes-ccgUifCgRg8-unsplash.jpg">
-                    <img src="../assets/img/Nature/allec-gomes-ccgUifCgRg8-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg">
-                    <img src="../assets/img/Nature/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/eberhard-grossgasteiger-HXJkqHexaak-unsplash.jpg">
-                    <img src="../assets/img/Nature/eberhard-grossgasteiger-HXJkqHexaak-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/gabe-rebra-tFvjSBm-gng-unsplash.jpg">
-                    <img src="../assets/img/Nature/gabe-rebra-tFvjSBm-gng-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/jocelyn-morales-N2xqgreISsA-unsplash.jpg">
-                    <img src="../assets/img/Nature/jocelyn-morales-N2xqgreISsA-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/meritt-thomas-lW5yf-EQFDs-unsplash.jpg">
-                    <img src="../assets/img/Nature/meritt-thomas-lW5yf-EQFDs-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/ruslan-bogdanov-7ZWV0AgYhAQ-unsplash.jpg">
-                    <img src="../assets/img/Nature/ruslan-bogdanov-7ZWV0AgYhAQ-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/sergey-pesterev-_VqyrvQi6do-unsplash.jpg">
-                    <img src="../assets/img/Nature/sergey-pesterev-_VqyrvQi6do-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/theo-eilertsen-photography-ajhmqq12XvI-unsplash.jpg">
-                    <img src="../assets/img/Nature/theo-eilertsen-photography-ajhmqq12XvI-unsplash.jpg" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../assets/img/Nature/usgs-4mmGxLTYZnw-unsplash.jpg">
-                    <img src="../assets/img/Nature/usgs-4mmGxLTYZnw-unsplash.jpg" alt="">
-                </a>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/allec-gomes-ccgUifCgRg8-unsplash.jpg">
+                        <img src="../assets/img/Nature/allec-gomes-ccgUifCgRg8-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/allec-gomes-ccgUifCgRg8-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg">
+                        <img src="../assets/img/Nature/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/chuttersnap-u-vmeJcJ-Z4-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/eberhard-grossgasteiger-HXJkqHexaak-unsplash.jpg">
+                        <img src="../assets/img/Nature/eberhard-grossgasteiger-HXJkqHexaak-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/eberhard-grossgasteiger-HXJkqHexaak-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/gabe-rebra-tFvjSBm-gng-unsplash.jpg">
+                        <img src="../assets/img/Nature/gabe-rebra-tFvjSBm-gng-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/gabe-rebra-tFvjSBm-gng-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/jocelyn-morales-N2xqgreISsA-unsplash.jpg">
+                        <img src="../assets/img/Nature/jocelyn-morales-N2xqgreISsA-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/jocelyn-morales-N2xqgreISsA-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/meritt-thomas-lW5yf-EQFDs-unsplash.jpg">
+                        <img src="../assets/img/Nature/meritt-thomas-lW5yf-EQFDs-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/meritt-thomas-lW5yf-EQFDs-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/ruslan-bogdanov-7ZWV0AgYhAQ-unsplash.jpg">
+                        <img src="../assets/img/Nature/ruslan-bogdanov-7ZWV0AgYhAQ-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/ruslan-bogdanov-7ZWV0AgYhAQ-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/sergey-pesterev-_VqyrvQi6do-unsplash.jpg">
+                        <img src="../assets/img/Nature/sergey-pesterev-_VqyrvQi6do-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/sergey-pesterev-_VqyrvQi6do-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/theo-eilertsen-photography-ajhmqq12XvI-unsplash.jpg">
+                        <img src="../assets/img/Nature/theo-eilertsen-photography-ajhmqq12XvI-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/theo-eilertsen-photography-ajhmqq12XvI-unsplash.jpg">download</a></button>
+                </div>
+                <div class="inputs">
+                    <a data-fancybox="gallery" href="../assets/img/Nature/usgs-4mmGxLTYZnw-unsplash.jpg">
+                        <img src="../assets/img/Nature/usgs-4mmGxLTYZnw-unsplash.jpg" alt="">
+                    </a>
+                    <button class="download"><a download href="../assets/img/Nature/usgs-4mmGxLTYZnw-unsplash.jpg">download</a></button>
+                </div>
+                <div style="display: none;" id="notFound">Search Input not found</div>
             </div>
         </div>
         <footer class="footer">
@@ -118,5 +140,21 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/library/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            animationEffect : "slide",
+            transitionEffect : "circular",
+            loop : "true",
+            buttons : [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        });
+    </script>
 </body>
 </html>
