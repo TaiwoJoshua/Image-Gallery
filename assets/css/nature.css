@@ -182,6 +182,7 @@ footer{
     .content>div{
         width: 100%;
         height: 35vh;
+        margin: 2%;
     }
     .sidenav>div>a:hover{
         padding-left: 0px;
