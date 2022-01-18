@@ -74,6 +74,7 @@
     padding-right: 15px;
     text-align: center;
     font-size: 10px;
+    height: 40px;
 }
 .pnumber:hover, .usemail:hover, .puser:hover{
     cursor: pointer;
