@@ -15,7 +15,7 @@
         <div class="formwrapper">
             <div class="img">
                 <h2>
-                    TeeJay<span>Studio</span> 
+                    TeeJay<span>Gallery</span> 
                 </h2>
                 <h1 class="production">
                     Production Starts Here
@@ -26,7 +26,7 @@
             </div>
             <div class="form">
                 <h1 class="class">
-                    Join TeeJay<span>Studio</span> 
+                    Join TeeJay<span>Gallery</span> 
                 </h1>
                 <div><i class="fas fa-user"></i><label for="Firstname">Firstname</label></div>
                 <input type="text" name="Firstname" id="firstName" maxlength="11" required placeholder="firstname here....."><br>
@@ -44,14 +44,9 @@
                 <input type="password" name="confirmpassword" id="confirmPassword" required placeholder="confirm password here....."><br>
                 <input type="submit" value="submit" id="submit">
                 <p>Already have an account? <button onclick="myFunction()"><a href="#blockdisplay">login</a></button></p>
+                <a href="./contents/imagegallery.html">Image Gallery</a>
             </div>
         </div>
-        <a href="./contents/imagegallery.html">Image Gallery</a>
-        <a href="./contents/about-us.html">About us</a>
-        <a href="./contents/animal.html">Animal</a>
-        <a href="./contents/food.html">Food</a>
-        <a href="./contents/nature.html">Nature</a>
-        <a href="./contents/layout.html">Layout</a>
     </div>
     <div id="blockdisplay" class="loginpagewrapper">
         <div class="loginformwrapper come">
@@ -69,6 +64,7 @@
             <input class="visible" type="text" name="username" id="uName" maxlength="11" required placeholder="username here.....">
             <div><i id="eye3" class="fas fa-eye-slash" onclick="theirFunction()"></i><label for="Password">Password</label></div>
             <input type="password" name="Password" id="pWord" maxlength="11" required placeholder="password here.....">
+            <div class="forget"><a href="#">Forgotten Password?</a></div>
             <input type="submit" value="submit" id="lsubmit">
             <p id="account">Don't have an account yet, <button id="lsignup" onclick="ourFunction()">Sign Up</button></p>
         </div>
@@ -78,33 +74,36 @@
     <script src="./assets/js/modal.js"></script>
     <script>
         function myFunction2() {
-        var x = document.getElementById("password");
+            var x = document.getElementById("password");
             if (x.type === "password") {
                 x.type = "text";
+                document.getElementById("eye").className = "fas fa-eye";
             } else {
                 x.type = "password";
+                document.getElementById("eye").className = "fas fa-eye-slash";
             }
-            document.getElementById("eye").className = "fas fa-eye";
             }
 
         function yourFunction() {
         var x = document.getElementById("confirmPassword");
             if (x.type === "password") {
                 x.type = "text";
+                document.getElementById("eye2").className = "fas fa-eye";
             } else {
                 x.type = "password";
+                document.getElementById("eye2").className = "fas fa-eye-slash";
             }
-            document.getElementById("eye2").className = "fas fa-eye";
             }
 
         function theirFunction() {
         var x = document.getElementById("pWord");
             if (x.type === "password") {
                 x.type = "text";
+                document.getElementById("eye3").className = "fas fa-eye";
             } else {
                 x.type = "password";
+                document.getElementById("eye3").className = "fas fa-eye-slash";
             }
-            document.getElementById("eye3").className = "fas fa-eye";
             }
     </script>
 </body>
