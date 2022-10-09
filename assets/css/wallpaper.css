@@ -5,25 +5,29 @@ body{
     color: #B68973;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar{
     width: 0.5em;
 }
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background: #EABF9F;
 }
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb{
     background-color: #FAF3E0;
     border: 0.5px solid #B68973;
 }
-.content::-webkit-scrollbar {
+:root{
+    scrollbar-color: #FAF3E0 #B68973;
+    scrollbar-width: thin;
+}
+.content::-webkit-scrollbar{
     width: 0.5em;
 }
-.content::-webkit-scrollbar-track {
+.content::-webkit-scrollbar-track{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background: #FAF3E0;
 }
-.content::-webkit-scrollbar-thumb {
+.content::-webkit-scrollbar-thumb{
     background-color: #EABF9F;
     border: 0.5px solid #B68973;
 }
@@ -111,7 +115,7 @@ span{
 }
 .content{
     width: 80%;
-    height: 90vh;
+    height: 100vh;
     box-sizing: border-box;
     overflow-y: scroll;
     display: flex;
@@ -155,28 +159,32 @@ footer{
 }
 .icons>a{
     padding: 5px;
+}
+.icons>a{
     font-size: 20px;
 }
 #bars{
-    position: absolute;
     z-index: 2;
 }
 #logouts{
-    position: relative;
-    margin-left: -4em;
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: white;
     padding: 10px 20px;
     visibility: collapse;
     z-index: -1;
+    font-size: 10px;
 }
 
 /* <------------------- Media Query Section ---------------------> */
-@media screen and (max-width: 425px) and (min-width: 320px){
+@media screen and (max-width: 780px) and (min-width: 320px){
     .navbar{
         flex-direction: column;
     }
     .links{
         padding: 12px;
+        position: relative;
     }
     a{
         font-size: 15px;

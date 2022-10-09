@@ -11,7 +11,7 @@
     z-index: 1;
 }
 .loginformwrapper{
-    flex-basis: 35%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -95,13 +95,15 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 425px) and (min-width: 320px){
+@media screen and (max-width: 780px) and (min-width: 320px){
     .loginpagewrapper{
         width: 100%;
+        padding: 0;
+        padding-top: 5em;
     }
     
     .loginformwrapper{
-        flex-grow: 20;
+        width: 300px;
     }
     #lsubmit{
         width: 50%;
@@ -110,8 +112,5 @@
     }
     #account, #lsignup{
         font-size: 13px;
-    }
-    .others{
-        width: 100%;
     }
 }
